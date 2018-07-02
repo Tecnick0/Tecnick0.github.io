@@ -109,15 +109,15 @@
                 <img src="img/texture.jpg">
               </div>
             <div class="col-lg-6 col-md-6 text-center"id"Ciao">
-              <h2 class="section-heading">TEXTURES</h2>
+              <h2 class="section-heading">TEXTURING</h2>
               <hr class="my-4">
               <p class="text-black mb-4">
-                La computer grafica 3D è un ramo della computer grafica che si basa sull'elaborazione di un insieme di modelli tridimensionali 
-                tramite algoritmi atti a produrre una verosimiglianza fotografica e ottica nell'immagine finale. Essa viene utilizzata nella creazione e postproduzione 
-                di opere nel campo del cinema, della televisione, videoludico e dell'architettura(CAD).Schematicamente, il metodo di produzione della computer grafica 3D 
-                è composto da due elementi: una descrizione di ciò che si intende visualizzare (scena), composta di rappresentazioni matematiche di oggetti tridimensionali,
-                detti "modelli", e un meccanismo di produzione di un'immagine 2D dalla scena, detto "motore di rendering" che si fa carico di tutti i calcoli necessari per la sua
-                creazione, attraverso l'uso di algoritmi che simulano il comportamento della luce e le proprietà ottiche e fisiche degli oggetti e dei materiali.
+                Texturing refers to the act of producing 2d images for use with 3d models. Commonly referred to as "maps" or "skins".
+                Textures work in conjunction with Shaders and Materials to produce the final rendering. The game model needs Texture Coordinates
+                to wrap the texture onto the model. Multiple Texture Types are often used to control different parts of the shader, such as Normal map or Specular color map.
+                A variety of techniques and Tools are used to make textures: painting by hand in a traditional 2d package, photo-manipulation, 3d scanning
+                with a photogrammetry tool, painting in 3d directly on models, creating procedurally in a node-based material editor, baking image data from one
+                model to another, etc.
               </p>
             </div>
           </div>
@@ -127,101 +127,62 @@
 
 
 
+
+
+
+
+
+
+
       <section id="services">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-6 text-center">
-              <h2 class="section-heading">Vantaggi</h2>
+            <div class="col-lg-3 col-md-3 text-center">
+              <h2 class="section-heading">Diffuse Map</h2>
               <hr class="my-4">
               <p class="text-muted mb-4">
-                I vantaggi dell'utilizzo di questo sistema sono:<br><br>
-                ⦁	L’economicità, infatti questi sistemi sono fino a 15 volte più economici dei tradizionali supercalcolatori rispetto ai quali, a parità di prestazioni, permettono un notevole risparmio sui componenti hardware.<br><br>
-                ⦁	La scalabilità, dal momento che le risorse sono distribuite.<br><br>
-                ⦁	Facilità di aggiornamento e manutenzione.<br><br>
-                ⦁	Disponibilità di un gran numero di software Open Source per i cluster, come MOSIX, openMosix e Beowulf.<br><br>
-                ⦁	Incremento capacità e velocità di calcolo grazie allo sfruttamento di più unità di calcolo, di un'architettura più potente e maggiore disponibilità di memoria.<br><br>
-                ⦁	Lo sfruttamento della cooperazione per risolvere problemi complessi.<br><br>
-                ⦁	L'affidabilità, in quanto il sistema continua a funzionare anche in caso di guasti a parti di esso, ovviamente con prestazioni inferiori.
+              In games a Diffuse Map usually means the color texture. Also called an Albedo map.
+              This map generally only represents the base colors. If diffuse is the only map being used, light,
+              shadow and highlights can be used to simulate the effects of more complex shaders. In such shaders, 
+              less to no lighting information is present in the diffuse, because those effects come from the contribution 
+              of other map types, such as Specular maps and/or Normal maps.
+              In offline rendering (movies, commercials, etc.) a diffuse map can mean a separate effect from a color map, where 
+              it controls the spread of any light that is being reflected off the surface.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 text-center">
-              <h2 class="section-heading">Vantaggi</h2>
+            <div class="col-lg-3 col-md-3 text-center">
+              <h2 class="section-heading">Specular Map</h2>
               <hr class="my-4">
               <p class="text-muted mb-4">
-                I vantaggi dell'utilizzo di questo sistema sono:<br><br>
-                ⦁	L’economicità, infatti questi sistemi sono fino a 15 volte più economici dei tradizionali supercalcolatori rispetto ai quali, a parità di prestazioni, permettono un notevole risparmio sui componenti hardware.<br><br>
-                ⦁	La scalabilità, dal momento che le risorse sono distribuite.<br><br>
-                ⦁	Facilità di aggiornamento e manutenzione.<br><br>
-                ⦁	Disponibilità di un gran numero di software Open Source per i cluster, come MOSIX, openMosix e Beowulf.<br><br>
-                ⦁	Incremento capacità e velocità di calcolo grazie allo sfruttamento di più unità di calcolo, di un'architettura più potente e maggiore disponibilità di memoria.<br><br>
-                ⦁	Lo sfruttamento della cooperazione per risolvere problemi complessi.<br><br>
-                ⦁	L'affidabilità, in quanto il sistema continua a funzionare anche in caso di guasti a parti di esso, ovviamente con prestazioni inferiori.
+                A texture that controls the intensity/color of the specular highlights from real-time lights.
+                Usually a specular map simply controls the brightness of the highlights, at a per-pixel level. 
+                If the shader supports RGB the specular map can be used to colorize specular highlights, useful 
+                for surfaces that have more complex reflective properties like metals, beetle shells, etc.
+                Sometimes a shader will also support per-pixel control for the width or power of the specular highlights, 
+                this is often called the Specular gloss map.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 text-center">
-              <h2 class="section-heading">Vantaggi</h2>
+            <div class="col-lg-3 col-md-3 text-center">
+              <h2 class="section-heading">Displacement Map</h2>
               <hr class="my-4">
               <p class="text-muted mb-4">
-                I vantaggi dell'utilizzo di questo sistema sono:<br><br>
-                ⦁	L’economicità, infatti questi sistemi sono fino a 15 volte più economici dei tradizionali supercalcolatori rispetto ai quali, a parità di prestazioni, permettono un notevole risparmio sui componenti hardware.<br><br>
-                ⦁	La scalabilità, dal momento che le risorse sono distribuite.<br><br>
-                ⦁	Facilità di aggiornamento e manutenzione.<br><br>
-                ⦁	Disponibilità di un gran numero di software Open Source per i cluster, come MOSIX, openMosix e Beowulf.<br><br>
-                ⦁	Incremento capacità e velocità di calcolo grazie allo sfruttamento di più unità di calcolo, di un'architettura più potente e maggiore disponibilità di memoria.<br><br>
-                ⦁	Lo sfruttamento della cooperazione per risolvere problemi complessi.<br><br>
-                ⦁	L'affidabilità, in quanto il sistema continua a funzionare anche in caso di guasti a parti di esso, ovviamente con prestazioni inferiori.
+                A displacement map is a grayscale texture used as a displacement map to define the topography of the polygons.
+                It's also called a height map.
+                Usually the brighter pixels make higher elevations, and the darker pixels make lower elevations, and 50% gray pixels 
+                make no change. Often the alpha channel of an object's texture is used for the height map. Landscapes often use height maps.
+
+
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 text-center">
-              <h2 class="section-heading">Vantaggi</h2>
+            <div class="col-lg-3 col-md-3 text-center">
+              <h2 class="section-heading">Normal Map</h2>
               <hr class="my-4">
               <p class="text-muted mb-4">
-                I vantaggi dell'utilizzo di questo sistema sono:<br><br>
-                ⦁	L’economicità, infatti questi sistemi sono fino a 15 volte più economici dei tradizionali supercalcolatori rispetto ai quali, a parità di prestazioni, permettono un notevole risparmio sui componenti hardware.<br><br>
-                ⦁	La scalabilità, dal momento che le risorse sono distribuite.<br><br>
-                ⦁	Facilità di aggiornamento e manutenzione.<br><br>
-                ⦁	Disponibilità di un gran numero di software Open Source per i cluster, come MOSIX, openMosix e Beowulf.<br><br>
-                ⦁	Incremento capacità e velocità di calcolo grazie allo sfruttamento di più unità di calcolo, di un'architettura più potente e maggiore disponibilità di memoria.<br><br>
-                ⦁	Lo sfruttamento della cooperazione per risolvere problemi complessi.<br><br>
-                ⦁	L'affidabilità, in quanto il sistema continua a funzionare anche in caso di guasti a parti di esso, ovviamente con prestazioni inferiori.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 text-center">
-              <h2 class="section-heading">Vantaggi</h2>
-              <hr class="my-4">
-              <p class="text-muted mb-4">
-                I vantaggi dell'utilizzo di questo sistema sono:<br><br>
-                ⦁	L’economicità, infatti questi sistemi sono fino a 15 volte più economici dei tradizionali supercalcolatori rispetto ai quali, a parità di prestazioni, permettono un notevole risparmio sui componenti hardware.<br><br>
-                ⦁	La scalabilità, dal momento che le risorse sono distribuite.<br><br>
-                ⦁	Facilità di aggiornamento e manutenzione.<br><br>
-                ⦁	Disponibilità di un gran numero di software Open Source per i cluster, come MOSIX, openMosix e Beowulf.<br><br>
-                ⦁	Incremento capacità e velocità di calcolo grazie allo sfruttamento di più unità di calcolo, di un'architettura più potente e maggiore disponibilità di memoria.<br><br>
-                ⦁	Lo sfruttamento della cooperazione per risolvere problemi complessi.<br><br>
-                ⦁	L'affidabilità, in quanto il sistema continua a funzionare anche in caso di guasti a parti di esso, ovviamente con prestazioni inferiori.
+                normal map is an image that stores a direction at each pixel. These directions are called normals.
+                The red, green, and blue channels of the image are used to control the direction of each pixel's normal.
+                A normal map is commonly used to fake high-resolution details on a low-resolution model. Each pixel of the
+                map stores the surface slope of the original high-res mesh at that point. This creates the illusion of more 
+                surface detail or better curvature. However, the silhouette of the model doesn't change.
               </p>
             </div>
           </div>
