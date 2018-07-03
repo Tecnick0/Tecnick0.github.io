@@ -224,6 +224,7 @@ header.masthead p
   {
     font-size: 1.15rem;
   }
+
 }
 
 @media (min-width: 992px) 
@@ -315,6 +316,7 @@ img
   float: center !important;
   width: 70%;
   height: auto;
+  padding-top: 40px;
 }
 #Ciao1
 {
