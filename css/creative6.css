@@ -194,7 +194,7 @@ header.masthead
 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/Casa2.png");
+  background-image: url("../img/italiano.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -293,4 +293,32 @@ footer
 {
   color: #ffff;
   background-color: rgba(4, 138, 138, 0.89);
+}
+#Ciao
+{
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  text-align: left !important;
+}
+#bello
+{
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+
+}
+#about
+{
+  padding: 3rem 0 !important;
+}
+img
+{
+  float: center !important;
+  width: 70%;
+  height: auto;
+  padding-top: 40px;
+}
+#Ciao1
+{
+  margin-right: 0% !important;
+  text-align: left !important;
 }
