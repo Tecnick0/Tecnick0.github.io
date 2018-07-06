@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6
 
 section 
 {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .section-heading 
@@ -293,4 +293,32 @@ footer
 {
   color: #ffff;
   background-color: rgba(150, 140, 0, 0.89);
+}
+#Ciao
+{
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  text-align: left !important;
+}
+#bello
+{
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+
+}
+#about
+{
+  padding: 3rem 0 !important;
+}
+img
+{
+  float: center !important;
+  width: 70%;
+  height: auto;
+  padding-top: 40px;
+}
+#Ciao1
+{
+  margin-right: 0% !important;
+  text-align: left !important;
 }
