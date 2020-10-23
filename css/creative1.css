@@ -11,9 +11,9 @@ body
 
 hr 
 {
-  max-width: 50px;
+  max-width: 550px;
   border-width: 3px;
-  border-color: rgba(10, 53, 133, 0.75);
+  border-color: rgba(197, 0, 0, 0.815);
 }
 
 hr.light 
@@ -23,7 +23,7 @@ hr.light
 
 a 
 {
-  color: rgba(10, 53, 133, 0.75);
+  color: rgb(195, 195, 195);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -35,7 +35,14 @@ a:hover
 }
 #mail
 {
-  color: #ffff;
+  color: rgba(224, 0, 0, 0.829);
+  font-family: 'Audiowide';
+  text-decoration: none;
+
+}
+#number
+{
+  color: rgba(224, 0, 0, 0.829);
 }
 
 h1,h2,h3,h4,h5,h6 
@@ -45,7 +52,7 @@ h1,h2,h3,h4,h5,h6
 
 .bg-primary 
 {
-  background-color: rgba(10, 53, 133, 0.75) !important;
+  background-color: rgb(190, 0, 0)!important;
 }
 
 .bg-dark 
@@ -96,7 +103,7 @@ img::-moz-selection
 
 #mainNav 
 {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255);
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
@@ -108,31 +115,32 @@ img::-moz-selection
 {
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(10, 53, 133, 0.75);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: rgba(255, 0, 0, 0.75);
+  font-family: 'Audiowide';
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover 
 {
-  color: rgba(10, 53, 133, 0.75);
+  color: rgba(133, 10, 10, 0.75);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,#mainNav .navbar-nav > li.nav-item > a.nav-link:focus 
 {
+  font-family: 'Audiowide';
   font-size: .9rem;
-  font-weight: 700;
+  font-weight: 1200;
   text-transform: uppercase;
-  color: #212529;
+  color: #000000;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover 
 {
-  color: rgba(10, 53, 133, 0.75);
+  color: rgb(240, 0, 0);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active 
 {
-  color:rgba(10, 53, 133, 0.75) !important;
+  color:rgba(255, 0, 0, 0.876) !important;
   background-color: transparent;
 }
 
@@ -146,11 +154,11 @@ img::-moz-selection
   #mainNav 
   {
     border-color: transparent;
-    background-color: rgba(10, 53, 133, 0.664);
+    background-color: rgba(224, 0, 0, 0.829);
   }
   #mainNav .navbar-brand 
   {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover 
   {
@@ -162,7 +170,7 @@ img::-moz-selection
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,#mainNav .navbar-nav > li.nav-item > a.nav-link:focus 
   {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover 
   {
@@ -171,15 +179,15 @@ img::-moz-selection
   #mainNav.navbar-shrink 
   {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-    background-color: #fff !important;
+    background-color: rgb(0, 0, 0) !important;
   }
   #mainNav.navbar-shrink .navbar-brand 
   {
-    color: rgba(10, 53, 133, 0.75);
+    color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover 
   {
-    color: rgba(10, 53, 133, 0.75);
+    color: rgba(224, 0, 0, 0.829);
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus 
   {
@@ -187,7 +195,7 @@ img::-moz-selection
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover 
   {
-    color: rgba(10, 53, 133, 0.75);
+    color: rgba(224, 0, 0, 0.829);
   }
 }
 header.masthead 
@@ -257,7 +265,7 @@ header.masthead p
 
 .text-primary 
 {
-  color:rgba(10, 53, 133, 0.75) !important;
+  color:rgba(133, 10, 10, 0.75) !important;
 }
 
 .btn 
@@ -293,7 +301,7 @@ header.masthead p
 footer
 {
   color: #ffff;
-  background-color: rgba(10, 53, 133, 0.75);
+  background-color: rgb(0, 0, 0);
 }
 #Ciao
 {
