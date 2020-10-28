@@ -71,5 +71,7 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-
+  $( document ).ready(function() {
+    new WOW().init();
+  });
 })(jQuery); // End of use strict
