@@ -317,6 +317,17 @@ header.masthead p
   }
 }
 
+@media (max-width:700px)
+{
+  h1
+  {
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+
 .service-box 
 {
   max-width: 400px;
