@@ -83,6 +83,20 @@ h1
   letter-spacing: 0.4rem;
 }
 
+#testoanimato
+{
+  font-size: 100px;
+  letter-spacing: 7px;
+  word-spacing: 20px;
+}
+
+b
+{
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
 h3
 {
   font-family: 'Audiowide';
@@ -502,4 +516,13 @@ input[type=submit]:hover {
   background-size: cover;
   border-image-width: auto;
 }
+
+#testogrande
+{
+  font-size: 6.5rem;
+}
+
+
+
+
 

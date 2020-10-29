@@ -74,4 +74,7 @@
   $( document ).ready(function() {
     new WOW().init();
   });
+
+  
+
 })(jQuery); // End of use strict

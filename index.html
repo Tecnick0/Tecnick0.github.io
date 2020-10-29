@@ -19,6 +19,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="css/creative1.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     
 
   </head>
@@ -56,15 +57,18 @@
       <div class="container my-auto">
         
         <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Angels Techno</strong>
+          <div class="col-lg-12 mx-auto">
+            <h1 class="text-uppercase" 
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <strong id="testogrande">Angels Techno</strong>
             </h1>
             <hr>
           </div>
-          <div class="col-lg-8 mx-auto">
-            <p class=" mb-5"><b>Gli angeli della ristorazione.</b></p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Scopri di più!</a>
+          <div class="col-lg-9 mx-auto">
+            <p class=" mb-5"><b class="ml3">Gli angeli della ristorazione.</b></p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" data-aos="zoom-out" data-aos-delay="2000" href="#services">Scopri di più!</a>
           </div>
         </div>
       </div>
@@ -177,8 +181,10 @@
           <h3 class="text-white" id="contact"><strong>Richiedi maggiori informazioni contattandoci:</strong></h3>
           <hr id="smallbar">
           <i class="fa fa-phone fa-1x sr-contact"></i>
-          <p id="number">338-887-7777</p>
-          <p id="number">347-474-7741</p>
+          <p id="number">
+            338-887-7777<br>
+           347-474-7741
+          </p>
           <i class="fas fa-envelope fa-1x sr-contact"></i>
           <p>
             <a id="mail" href="mailto:tecnicko1999@hotmail.com">tecnicko1999@hotmail.com</a><br>
@@ -198,10 +204,10 @@
         </div>
 
 
-        <div class="container col-lg-2 ml-4">
+        <div class="container col-lg-2 mb-3 ml-4">
           <h3 class="text-white" id="contact"><strong>Oppure:</strong></h3>
           <hr id="smallbar">
-          <ul id="myList">
+          <ul class="text-center"id="myList">
             <li id="testo2">Dai un'occhiata ai nostri lavori.</li>
             <li id="testo2">Scopri i marchi che offriamo.</li>
           </ul>
@@ -239,6 +245,21 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/creative.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      // Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml3');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: false})
+        .add({
+          targets: '.ml3 .letter',
+          opacity: [0,1],
+          easing: "easeInOutQuad",
+          duration: 2250,
+          delay: (el, i) => 50 * (i+1)
+        });
+        </script>
     <script>
       AOS.init();
     </script>
