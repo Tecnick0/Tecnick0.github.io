@@ -6,7 +6,7 @@ body,html
 
 body 
 {
-  font-family: 'Baumans';
+  font-family: 'Orbitron', sans-serif;
   font-size: 20px;
 }
 
@@ -116,7 +116,7 @@ h3
 
 .bg-primary 
 {
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(133, 133, 133) 100%);
+  background-color: rgb(0, 0, 0);
   padding-bottom: 0px;
   padding-top: 0px;
 }
@@ -343,6 +343,30 @@ header.masthead p
   }
 }
 
+@media (max-width:700px)
+{
+  strong
+  {
+    font-size: 2rem;
+  }
+  .ml3
+  {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:990px)
+{
+  #testogrande
+  {
+    font-size: 4rem;
+  }
+  .ml3
+  {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width:602px)
 {
   #mainNav .navbar-brand 
@@ -517,11 +541,47 @@ input[type=submit]:hover {
   border-image-width: auto;
 }
 
+#row2
+{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/Bar2.jpg");
+  background-position:100% 70%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: cover;
+}
+
+#row3
+{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.png");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: auto;
+}
+#row4
+{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/pasticceria2.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: auto;
+}
 #testogrande
 {
   font-size: 6.5rem;
 }
-
 
 
 
