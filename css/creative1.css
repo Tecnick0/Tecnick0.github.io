@@ -114,6 +114,13 @@ h3
   text-align: left;
 }
 
+#testo3
+{
+  color: rgb(149, 149, 149);
+  text-align: center;
+  text-align: justify;
+}
+
 .bg-primary 
 {
   background-color: rgb(0, 0, 0);
@@ -373,6 +380,10 @@ header.masthead p
   {
     font-size: 1rem;
   }
+  #contact
+  {
+    font-size: 0.4rem;
+  }
 }
 @media (min-width:992px)
 {
@@ -425,13 +436,13 @@ header.masthead p
 footer
 {
   color: #ffff;
-  background: linear-gradient(to top, 	rgb(36, 36, 36) 0%,	rgb(0, 0, 0) 100%);
+  background: linear-gradient(to top, 	rgb(24, 24, 24) 0%,	rgb(0, 0, 0) 90%);
 }
 #services
 {
   background: radial-gradient(circle, 	rgb(36, 36, 36) 0%,	rgb(0, 0, 0) 80%);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 #Ciao
 {
@@ -484,6 +495,7 @@ i:hover
 #contact
 {
   font-size: medium;
+  padding-top: 10%;
 }
 #smallbar
 {
@@ -531,7 +543,7 @@ input[type=submit]:hover {
 #row
 {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
+  padding-bottom:160px;
   background-image: url("../img/header.png");
   background-position: center center;
   -webkit-background-size: cover;
@@ -544,8 +556,8 @@ input[type=submit]:hover {
 #row2
 {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/Bar2.jpg");
+  padding-bottom:160px;
+  background-image: url("../img/food-2940544.jpg");
   background-position:100% 70%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -557,9 +569,9 @@ input[type=submit]:hover {
 #row3
 {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.png");
-  background-position: center center;
+  padding-bottom:160px;
+  background-image: url("../img/food-3343521.jpg");
+  background-position: 50% 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -569,7 +581,7 @@ input[type=submit]:hover {
 #row4
 {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
+  padding-bottom:160px;
   background-image: url("../img/pasticceria2.jpg");
   background-position: center center;
   -webkit-background-size: cover;
@@ -583,6 +595,33 @@ input[type=submit]:hover {
   font-size: 6.5rem;
 }
 
+.presentation
+{
+  background-color: rgb(0, 0, 0);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 
+.responsive 
+  {
+    padding-bottom: calc(160px);
+    padding-top: 10rem;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+  }
+  #graffa1
+  {
+    font-size:40px;
+    color: rgb(139,0,0); 
+    padding-right: 6px;
+  }
 
+  #graffa2
+  {
+    font-size:40px;
+    color: rgb(139,0,0);
+    padding-left: 6px;
+  }
 
+  
