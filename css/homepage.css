@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# body
+--------------------------------------------------------------*/
+
 body,html 
 {
   width: 100%;
@@ -8,14 +12,20 @@ body
 {
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
+
 }
 
+
+/*--------------------------------------------------------------
+# hr
+--------------------------------------------------------------*/
 hr 
 {
   max-width: 200px;
   border-width: 3px;
   border-color: rgb(139, 0, 0);
 }
+
 
 hr.light 
 {
@@ -40,6 +50,16 @@ hr.light
   border-color: rgb(255, 255, 255);
 }
 
+#smallbar
+{
+  border-width: 1px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Link <a>
+--------------------------------------------------------------*/
 a 
 {
   color: rgb(195, 195, 195);
@@ -52,25 +72,13 @@ a:hover
 {
   color: rgb(226, 0, 0);
 }
-#mail
-{
-  color: rgb(139, 0, 0);
-  font-family: 'Audiowide';
-  text-decoration: none;
-  font-size: 15px;
 
-}
-#mail:hover
-{
-  color: #fff;
-}
-#number
-{
-  color: rgb(139, 0, 0);
-  font-family: 'Audiowide';
-  font-size: 15px;
-}
 
+
+
+/*--------------------------------------------------------------
+# Titoli h1,h2,h3,h4,h5,h6
+--------------------------------------------------------------*/
 h2,h4,h5,h6 
 {
   font-family: 'Audiowide';
@@ -82,14 +90,14 @@ h1
   font-size: 50px;
   letter-spacing: 0.4rem;
 }
-
-#testoanimato
+h3
 {
-  font-size: 100px;
-  letter-spacing: 7px;
-  word-spacing: 20px;
+  font-family: 'Audiowide';
+  color: rgb(139, 0, 0);
 }
-
+/*--------------------------------------------------------------
+# Grassetto
+--------------------------------------------------------------*/
 b
 {
   font-size: 30px;
@@ -97,10 +105,18 @@ b
   font-family: 'Orbitron', sans-serif;
 }
 
-h3
+
+
+
+/*--------------------------------------------------------------
+# Testo
+--------------------------------------------------------------*/
+
+#testoanimato
 {
-  font-family: 'Audiowide';
-  color: rgb(139, 0, 0);
+  font-size: 100px;
+  letter-spacing: 7px;
+  word-spacing: 20px;
 }
 
 #testo1
@@ -120,34 +136,38 @@ h3
   text-align: center;
   text-align: justify;
 }
+#textfooter
+{
+  color: rgb(149, 149, 149);
+  font-size: 13px;
+}
 
+
+
+/*--------------------------------------------------------------
+# Background 
+--------------------------------------------------------------*/
 .bg-primary 
 {
   background-color: rgb(0, 0, 0);
   padding-bottom: 0px;
   padding-top: 0px;
 }
-
 .bg-dark 
 {
   background-color: #212529 !important;
 }
-
 .text-faded 
 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+
+
 section 
 {
   padding: 3rem 0;
 }
-
-#headerContainer
-{
-  max-width: 100%;
-}
-
 .section-heading 
 {
   margin-top: 0;
@@ -159,7 +179,6 @@ section
   background: #212529;
   text-shadow: none;
 }
-
 ::selection 
 {
   color: #fff;
@@ -178,6 +197,15 @@ img::-moz-selection
   color: #fff;
   background: transparent;
 }
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Main Nav
+--------------------------------------------------------------*/
 
 #mainNav 
 {
@@ -228,6 +256,22 @@ img::-moz-selection
   background-color: transparent;
 }
 
+#headerContainer
+{
+  max-width: 100%;
+}
+#logoNavBar
+{
+  max-width: 4%;
+  padding-top: 0%;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# RESPONSIVE Main Nav
+--------------------------------------------------------------*/
 @media (min-width: 992px) 
 {
   #mainNav 
@@ -238,6 +282,7 @@ img::-moz-selection
   #mainNav .navbar-brand 
   {
     color: rgb(0, 0, 0);
+    font-size: 1.7rem;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover 
   {
@@ -277,6 +322,23 @@ img::-moz-selection
     color: rgba(224, 0, 0, 0.829);
   }
 }
+@media (max-width:602px)
+{
+  #mainNav .navbar-brand 
+  {
+    font-size: 1rem;
+  }
+  #contact
+  {
+    font-size: 0.4rem;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 header.masthead 
 {
   padding-top: 10rem;
@@ -288,7 +350,6 @@ header.masthead
   -o-background-size: cover;
   background-size: cover;
 }
-
 
 header.masthead hr 
 {
@@ -305,6 +366,16 @@ header.masthead p
  {
   font-weight: 300;
 }
+
+/*--------------------------------------------------------------
+# Bottone scopri di più
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# RESPONSIVE Header
+--------------------------------------------------------------*/
 
 @media (min-width: 768px) 
 {
@@ -329,7 +400,6 @@ header.masthead p
   }
 }
 
-
 @media (min-width: 1200px)
  {
   header.masthead h1 
@@ -337,6 +407,14 @@ header.masthead p
     font-size: 4rem;
   }
 }
+
+
+
+
+
+/*--------------------------------------------------------------
+# RESPONSIVE 
+--------------------------------------------------------------*/
 
 @media (max-width:700px)
 {
@@ -369,35 +447,22 @@ header.masthead p
   }
 }
 
-@media (max-width:602px)
-{
-  #mainNav .navbar-brand 
-  {
-    font-size: 1rem;
-  }
-  #contact
-  {
-    font-size: 0.4rem;
-  }
-}
-@media (min-width:992px)
-{
-  #mainNav .navbar-brand 
-  {
-    font-size: 1.7rem;
-  }
-}
 
-.service-box 
-{
-  max-width: 400px;
-}
+
+
 
 .text-primary 
 {
   color:rgba(255, 255, 255, 0.75) !important;
 }
 
+
+
+
+
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
 .btn 
 {
   font-weight: 700;
@@ -428,74 +493,34 @@ header.masthead p
 {
   box-shadow: 0 0 0 0.2rem rgba(22, 22, 22, 0.75) !important;
 }
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer
 {
   color: #ffff;
   background: linear-gradient(to top, 	rgb(24, 24, 24) 0%,	rgb(0, 0, 0) 90%);
 }
-#services
+#mail:hover
 {
-  background: radial-gradient(circle, 	rgb(36, 36, 36) 0%,	rgb(0, 0, 0) 80%);
-  padding-top: 10%;
-  padding-bottom: 10%;
+  color: #fff;
 }
-#Ciao
+#number
 {
-  margin-left: 0% !important;
-  margin-right: 0% !important;
-  text-align: left !important;
+  color: rgb(139, 0, 0);
+  font-family: 'Audiowide';
+  font-size: 15px;
 }
-#bello
-{
-  margin-left: 0% !important;
-  margin-right: 0% !important;
-
-}
-#about
-{
-  padding: 3rem 0 !important;
-  background: linear-gradient(to left, rgb(255, 0, 0) 0%, rgb(95, 0, 0) 90%);
-}
-img
-{
-  float: center !important;
-  width: 70%;
-  height: auto;
-  padding-top: 40px;
-}
-#Ciao1
-{
-  margin-right: 0% !important;
-  text-align: left !important;
-}
-i:hover
-{
-  text-shadow:2px 2px 4px #000000;
-}
-#logo
-{
-  max-width: 4%;
-  padding-top: 0%;
-}
-.finestre
-{
-  background-color: #212529;
-  height: 100%;
-}
-#vl {
-  border-right: 1px solid rgb(105, 105, 105);
-  height: 100%;
-}
-
 #contact
 {
   font-size: medium;
   padding-top: 10%;
 }
-#smallbar
-{
-  border-width: 1px;
-}
+
 #social
 {
   font-size: 28px;
@@ -505,8 +530,30 @@ i:hover
 {
   color: rgb(133, 133, 133);
 }
+#about
+{
+  padding: 3rem 0 !important;
+  background: linear-gradient(to left, rgb(255, 0, 0) 0%, rgb(95, 0, 0) 90%);
+}
+#vl {
+  border-right: 1px solid rgb(105, 105, 105);
+  height: 100%;
+}
+#mail
+{
+  color: rgb(139, 0, 0);
+  font-family: 'Audiowide';
+  text-decoration: none;
+  font-size: 15px;
 
+}
+#myListFooter 
+{
+  list-style-type:square;
+  color: rgb(139, 0, 0);
+}
 
+/*Input campi form*/
 
 input[type=text], select, textarea {
   width: 100%;
@@ -516,7 +563,6 @@ input[type=text], select, textarea {
   box-sizing: border-box;
   resize: vertical;
 }
-
 input[type=submit] {
   background-color: rgb(139, 0, 0);
   color: rgb(255, 255, 255);
@@ -525,70 +571,15 @@ input[type=submit] {
   border-radius: 2px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: rgb(0, 0, 0);
 }
 
-#myList 
-{
-  list-style-type:square;
-  color: rgb(139, 0, 0);
-}
-#row
-{
-  padding-top: 10rem;
-  padding-bottom:160px;
-  background-image: url("../img/header.png");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-image-width: auto;
-}
 
-#row2
-{
-  padding-top: 10rem;
-  padding-bottom:160px;
-  background-image: url("../img/food-2940544.jpg");
-  background-position:100% 70%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-image-width: cover;
-}
 
-#row3
-{
-  padding-top: 10rem;
-  padding-bottom:160px;
-  background-image: url("../img/food-3343521.jpg");
-  background-position: 50% 60%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-image-width: auto;
-}
-#row4
-{
-  padding-top: 10rem;
-  padding-bottom:160px;
-  background-image: url("../img/pasticceria2.jpg");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-image-width: auto;
-}
-#testogrande
-{
-  font-size: 6.5rem;
-}
+/*--------------------------------------------------------------
+# Chi Siamo pagina
+--------------------------------------------------------------*/
 
 .presentation
 {
@@ -620,30 +611,307 @@ input[type=submit]:hover {
   }
 
 
-  .brands
+
+
+
+/*--------------------------------------------------------------
+# Servizi pagina
+--------------------------------------------------------------*/
+
+
+#services
 {
-  background-color: rgb(0, 0, 0);
-  padding-top: 10%;
-  padding-bottom: 3%;
+  background: radial-gradient(circle, 	rgb(36, 36, 36) 0%,	rgb(0, 0, 0) 80%);
+  padding-top: 7%;
+  padding-bottom: 7%;
+  
+}
+.service-box 
+{
+  max-width: 400px;
 }
 
 
-.column {
-  flex: 25%;
-  padding: 0 4px;
-}
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+
+
+
+/*--------------------------------------------------------------
+# I nostri marchi pagina
+--------------------------------------------------------------*/
+img
+{
+  float: center !important;
+  width: 80%;
   height: auto;
 }
-
-#marchio
-{
-  filter: grayscale(0%);
+/*Swiper marchi*/
+.swiper-container {
+  width: 100%;
+  height: 20%;
+  background: #fff;
 }
-  
+.swiper-slide 
+{
+  margin-right: 0%!important;
+  margin-top: 0%!important;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Ciao
+{
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  text-align: left !important;
+}
+#bello
+{
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+
+}
+
+
+#Ciao1
+{
+  margin-right: 0% !important;
+  text-align: left !important;
+}
+i:hover
+{
+  text-shadow:2px 2px 4px #000000;
+}
+
+.finestre
+{
+  background-color: #212529;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# SEZIONE 
+--------------------------------------------------------------*/
+#row
+{
+  padding-top: 10rem;
+  padding-bottom:160px;
+  background-image: url("../img/header.png");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: auto;
+}
+/*--------------------------------------------------------------
+# SEZIONE 
+--------------------------------------------------------------*/
+#row2
+{
+  padding-top: 10rem;
+  padding-bottom:160px;
+  background-image: url("../img/food-2940544.jpg");
+  background-position:100% 70%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: cover;
+}
+/*--------------------------------------------------------------
+# SEZIONE  
+--------------------------------------------------------------*/
+#row3
+{
+  padding-top: 10rem;
+  padding-bottom:160px;
+  background-image: url("../img/food-3343521.jpg");
+  background-position: 50% 60%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: auto;
+}
+
+
+
+/*--------------------------------------------------------------
+# SEZIONE Pasticcerie 
+--------------------------------------------------------------*/
+#row4
+{
+  padding-top: 10rem;
+  padding-bottom:160px;
+  background-image: url("../img/pasticceria2.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-image-width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#testogrande
+{
+  font-size: 6.5rem;
+}
+
+
+/*--------------------------------------------------------------
+# SECTION COUNTER
+--------------------------------------------------------------*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #000000;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  #vl
+  {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-color: rgb(0, 0, 0);
+}
+#sectioncounter
+{
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+}
+#card1
+{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(57,57,57,1) 100%);
+}
+#card2
+{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,57,57,1) 0%, rgba(112,112,112,1) 100%);
+}
+#card3
+{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,112,112,1) 0%, rgba(57,57,57,1) 100%);
+}
+#card4
+{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# SCROLL BAR
+--------------------------------------------------------------*/
 #scroll
 {
   background-color: rgb(255, 255, 255);
@@ -652,46 +920,25 @@ input[type=submit]:hover {
   width: 1005px;
   overflow-y: scroll;
 }
-
 ::-webkit-scrollbar 
 {
   width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track 
 {
   box-shadow: inset 50px 50px 5px rgb(70, 70, 70); 
   border-radius: 5px;
 }
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(190, 0, 0); 
-  border-radius: 5px;
+  border-radius: 1px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #7e0000; 
 }
 
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  #scroll
-  {
-    height: 200px;
-    width: auto;
-  }
-}
+
