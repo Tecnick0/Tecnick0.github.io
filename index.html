@@ -514,7 +514,7 @@
         <div class="card" id="card2">
           <p><i class="fa fa-3x fa-check"></i></p>
           <h3>22+</h3>
-          <p>Progetti Forniti</p>
+          <p>Progetti Collaudati</p>
         </div>
       </div>
       <div class="column col-lg-3"id="vl">
@@ -540,19 +540,26 @@
 
 
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
       
     <footer class="container-fluid text-center" id="contact">
 
-      <!-- Contatti -->
+      <!-- DIV Footer Main -->
+      <div class="row col-lg-12">
 
-      <br>               
-      <div class="row">
-        <div class="col-lg-4 ml-1 text-center" id="vl">
-          <h3 class="text-white" ><strong id="contact">Richiedi maggiori informazioni contattandoci:</strong></h3>
-          <hr id="smallbar">
-          <i class="fa fa-phone fa-1x sr-contact"></i>
+
+        <!-- DIV Contatti -->
+        <div class="col-lg-3 ml-1">
+
+          <!-- Contatti -->
+          <h3 class="text-white my-1">
+            <strong id="contact1">Contattaci</strong>
+          </h3>
+
+          <hr class="my-1" id="smallbar">
+          
           <p id="number">
+            <i class="mr-2 fa fa-phone fa-lg sr-contact"></i>
             338-887-7777<br>
            347-474-7741
           </p>
@@ -565,18 +572,12 @@
           <p>
             <a id="mail" href="https://www.google.com/maps/place/Angels+Clean+Srl/@42.1066325,11.7853045,15z/data=!4m5!3m4!1s0x0:0x46088fc6e4e18e38!8m2!3d42.1066325!4d11.7853045">Via di vigna Turci, snc - 00053 Civitavecchia (RM)</a>
           </p>
-          <h3 class="text-center text-white mb-5" >
-            <strong id="contact">seguici anche su:</strong>
-            <a href="https://www.facebook.com/angelscleancv/"><i class="fab fa-facebook-square fa-1x" id="social"></i></a>
-            <a href="https://www.facebook.com/angelscleancv/"><i class="fab fa-instagram fa-1x" id="social"></i></a>
-            <a href="https://www.facebook.com/angelscleancv/"><i class="fab fa-twitter-square fa-1x" id="social"></i></a>
-            <a href="https://www.facebook.com/angelscleancv/"><i class="fab fa-youtube fa-1x" id="social"></i></a>
-          </h3>
         </div>
 
-        <!-- Lista -->
-
+        <!-- DIv Lista -->
         <div class="container col-lg-2 mb-3 ml-4">
+
+          <!-- Lista -->
           <h3 class="text-white" ><strong id="contact">Oppure:</strong></h3>
           <hr id="smallbar">
           <ul class="text-center"id="myListFooter">
@@ -584,24 +585,61 @@
             <li id="testo2">Scopri i marchi che offriamo.</li>
           </ul>
         </div>
-
-        <!-- Richiedi Preventivo -->
-
-        <div class="container col-lg-3 mr-2">
-          <form action="action_page.php">
-            <label for="fname"><h3 class="text-white"><strong id="contact">Nome</strong></h3></label>
-            <input type="text" id="fname" name="firstname" placeholder="Il tuo nome..">       
-            <label for="lname"><h3 class="text-white" ><strong id="contact">Cognome</strong></h3></label>
-            <input type="text" id="lname" name="lastname" placeholder="Il tuo cognome..">
-            <label for="subject"><h3 class="text-white"><strong id="contact">Messaggio</strong></h3></label>
-            <textarea id="subject" name="subject" placeholder="Il tuo messaggio.." style="height:100px"></textarea>
-            <input type="submit" value="Invia">
-          </form>
-        </div>
+      <!-- Fine DIV Footer Main -->
       </div>
-      <p class="mb-0 mt-3" id="textfooter">Copyright © 2021 Angels Clean srl - P.IVA: 10259531001.
+
+      <hr class="my-1 mt-3" id="hrfooter">
+
+         <!-- DIV seconda sezione footer -->
+    <div class="container p-4 pb-0">
+
+      <!-- Section: Social media -->
+      <strong id="contact">seguici anche su</strong>
+
+      <section class="pb-0 pt-3">
+      
+        <!-- Facebook -->
+        <a class="btn btn-floating m-1" data-mdb-toggle="tooltip" title="Facebook"href="https://www.facebook.com/angelscleancv/" role="button">
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a class="btn btn-floating m-1" data-mdb-toggle="tooltip" title="Twitter" href="https://www.facebook.com/angelscleancv/" role="button">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+
+        <!-- Google -->
+        <a class="btn btn-floating m-1" data-mdb-toggle="tooltip" title="Google" href="https://www.facebook.com/angelscleancv/" role="button">
+          <i class="fab fa-google fa-lg"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" data-mdb-toggle="tooltip" title="Instagram"href="https://www.facebook.com/angelscleancv/" role="button">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+
+        <!-- Youtube -->
+        <a class="btn btn-floating m-1" data-mdb-toggle="tooltip" title="Youtube"href="https://www.facebook.com/angelscleancv/" role="button">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+
+      </section>
+      <!-- Fine Section: Social media -->
+
+    </div>
+    <!-- Fine DIV seconda sezione footer-->
+
+    <hr class="mt-1 mb-0" id="hrfooter">
+
+    <!-- DIV Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6);">
+      <p class="mb-0 mt-0" id="textfooter">Copyright © 2021 Angels Clean srl - P.IVA: 10259531001.
         Tutti i diritti sono riservati.</p>
-        <p class="mb-5 mt-2" id="textfooter">Powered by: Daniele Cifoletti.</p>
+      <p class="mb-2 mt-2" id="textfooter">Powered by: Daniele Cifoletti.</p>
+    </div>
+    <!--Fine DIV Copyright -->
+
+    <!-- FINE FOOTER -->
     </footer>
 
 
@@ -610,7 +648,24 @@
 
 
 
-<!-- LINK JS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- LINK JS -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -635,8 +690,7 @@
           duration: 2250,
           delay: (el, i) => 50 * (i+1)
         });
-        </script>
-
+    </script>
 
     <script>
       AOS.init();
@@ -644,13 +698,13 @@
 
 
 
-<!-- Swiper JS -->
+  <!-- Swiper JS -->
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
    <!-- Initialize Swiper -->
 
-   <script>
+  <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 5,
       spaceBetween: 30,
@@ -674,6 +728,6 @@
 
 
 
-  </body>
+</body>
 
 </html>
