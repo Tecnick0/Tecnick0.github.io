@@ -144,6 +144,11 @@ b
   text-align: justify;
 }
 
+.text-primary 
+{
+  color:rgba(255, 255, 255, 0.75) !important;
+}
+
 
 
 
@@ -454,11 +459,6 @@ header.masthead p
 
 
 
-.text-primary 
-{
-  color:rgba(255, 255, 255, 0.75) !important;
-}
-
 
 
 
@@ -545,16 +545,23 @@ footer
   font-size: 15px;
 
 }
+
 #myListFooter 
 {
   list-style-type:square;
   color: rgb(139, 0, 0);
 }
+
 #textfooter
 {
   color: rgb(149, 149, 149);
   font-size: 15px;
 }
+
+
+
+
+
 
 
 
@@ -602,7 +609,7 @@ footer
 
 #services
 {
-  background: radial-gradient(circle, 	rgb(36, 36, 36) 0%,	rgb(0, 0, 0) 80%);
+  background: radial-gradient(circle, 	rgb(34, 34, 34) 0%,	rgb(0, 0, 0) 90%);
   padding-top: 7%;
   padding-bottom: 7%;
   
@@ -610,6 +617,7 @@ footer
 .service-box 
 {
   max-width: 400px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.63);
 }
 
 
@@ -649,6 +657,10 @@ img
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+#marchio:hover
+{
+  width: 90%;
 }
 
 
@@ -733,19 +745,17 @@ i:hover
 
 
 /*--------------------------------------------------------------
-# SEZIONE 
+# SEZIONE IMPIANTI
 --------------------------------------------------------------*/
 #row
 {
-  padding-top: 10rem;
-  padding-bottom:160px;
   background-image: url("../img/header.png");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-image-width: auto;
+  border-radius: 0% 100% 100% 0% / 0% 200% 100% 100%;
 }
 /*--------------------------------------------------------------
 # SEZIONE 
